@@ -1,0 +1,30 @@
+{
+  "name": "lifecraft-events-management",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LifeCraft Events Management API built with Node.js, Express, and MongoDB",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "seed": "node src/scripts/seedEvents.js"
+  },
+  "dependencies": {
+    "axios": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.16.1",
+    "node-cron": "^4.6.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.1"
+  }
+}
